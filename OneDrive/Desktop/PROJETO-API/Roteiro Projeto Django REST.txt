@@ -1,0 +1,49 @@
+projeto Django REST Framwork
+
+Myflix
+
+API 
+
+Users
+Streams
+Listas - Usuarios por Streams e Listas de Streams de Usuarios 
+
+Regras:
+URL 
+http://localhost:8000 ou 127.0.0.1:8000
+Endpoints	/v1/users/
+			/v1/steams/
+			/v1/listas
+			/v1/users/(id-user)/listas
+			/v1/steams/(id-streams)/listas
+URI:
+Users:
+URI: http://127.0.0:8000/v1/users/
+
+Model:
+	id
+	nome
+	email
+	cpf (maximo de 11 caracteres)
+	data de nascimento
+	numero de telefone (maximo de 14 caracteres)
+	
+Streams
+URI: http://127.0.0:8000/v1/steams/
+Model:
+	id
+	codigo do stream (maximo de 10 caracteres)
+	descrição
+	categoria (Filme, Serie e Documentario)
+	
+Listas
+URI: http://127.0.0:8000/v1/users/(id-user)/listas
+	 http://127.0.0:8000/v1/steams/(id-streams)/listas
+	 http://127.0.0:8000/v1/listas
+
+Model
+	id
+	user
+	stream
+
+	
